@@ -44,7 +44,7 @@ const Weather = () => {
 
      
       axios
-      .get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=ea557e48710175d4995928275dc628fb&lang=sp`)
+      .get(`https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&q=${inputValue}&appid=ea557e48710175d4995928275dc628fb&lang=sp`)
 
       .then( resp => setInfo(resp.data))
       
